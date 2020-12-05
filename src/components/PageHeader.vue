@@ -25,9 +25,6 @@
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
         <li class="nav-item">
-          <a class="nav-link" href="#services">Servicios</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#news">Noticias</a>
         </li>
         <li class="nav-item">
