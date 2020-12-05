@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid align-content-center">
+  <div class="container-fluid align-content-center" id="news">
       <h2 class="text-center text-info font-weight-bold p-5">Noticias</h2>
       <div class="row align-items-center" >
         <div class="col-md-6 p-5" v-for="(news, index) of news" v-bind:key="index" style="marign-right:1px">
