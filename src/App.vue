@@ -4,7 +4,7 @@
      <page-banner></page-banner>
     <section-api> </section-api>    
             
-    <div class="container-fluid">
+    <div id= "team" class="container-fluid">
       <div class="row">
         <div class="col mt-5" v-for="(item, index) of team " :key="index">
         <team-card v-bind:member= "item"></team-card>
