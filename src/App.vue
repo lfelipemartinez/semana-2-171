@@ -1,15 +1,19 @@
 <template>
   <div id="app">
     <page-header></page-header>
-    <section-api> </section-api>
-    
+     <page-banner></page-banner>
+    <section-api> </section-api>    
+            
     <div class="container-fluid">
       <div class="row">
         <div class="col mt-5" v-for="(item, index) of team " :key="index">
         <team-card v-bind:member= "item"></team-card>
+        
       </div>
     </div>
+    <Footer></Footer>
     </div>
+
   </div>
 </template>
 
@@ -17,6 +21,8 @@
 import PageHeader from "./components/PageHeader.vue";
 import SectionApi from "./components/SectionApi";
 import TeamCard from './components/TeamCard.vue';
+import Footer from './components/Footer.vue';
+import PageBanner from "./components/PageBanner.vue";
 const imgLink = require('../public/images/ndml.jpg');
 const imgLink1 = require('../public/images/cyms.jpg');
 const imgLink2 = require('../public/images/yss.jpg');
@@ -26,8 +32,11 @@ export default {
   name: "App",
   components: {
     PageHeader,
+    PageBanner,
     SectionApi,
-    TeamCard
+    TeamCard,   
+    Footer,
+     
   },
   data (){
     return{
